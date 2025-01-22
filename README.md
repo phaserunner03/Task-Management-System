@@ -91,6 +91,10 @@ This application provides a secure task management system, allowing authenticate
   * **Parameters:** `id` (string) - Task ID.
   * **Response:** 404 error if not found or 400 error if duplicate IDs are detected.
 
+* **DELETE /api/tasks/deleteAll:** Deletes all tasks.
+  * **Response:** 404 error if not found or 400 error if duplicate IDs are detected.
+
+
 **2. Authentication**
 
 * **POST /api/auth/register:** Registers a new user.
