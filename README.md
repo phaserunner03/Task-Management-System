@@ -9,7 +9,8 @@ This application provides a secure task management system, allowing authenticate
 
 **1. Tasks**
 
-* **GET /api/tasks:** Retrieves a list of all tasks.
+* **GET /api/tasks/getAllTasks:** Retrieves a list of all tasks with default pagination of page no 1 and size 10.
+* * **Parameters:** `page no` and `page size`.
   * **Response:** Array of task objects.
   * **Example Response:**
     ```json
@@ -25,7 +26,7 @@ This application provides a secure task management system, allowing authenticate
     ]
     ```
 
-* **GET /api/tasks/:id:** Retrieves a specific task by its ID.
+* **GET /api/tasks/getTaskById/:id:** Retrieves a specific task by its ID.
   * **Parameters:** `id` (string) - Task ID.
   * **Response:** Task object or 404 error if not found.
   * **Example Response:**
@@ -40,7 +41,7 @@ This application provides a secure task management system, allowing authenticate
     }
     ```
 
-* **POST /api/createTask:** Creates a new task.
+* **POST /api/tasks/createTask:** Creates a new task.
   * **Request Body:** JSON object containing `title`, `description`, and `status`.
   * **Response:** The created task object or 400 error for invalid input.
   * **Example Request Body:**
@@ -63,7 +64,7 @@ This application provides a secure task management system, allowing authenticate
     }
     ```
 
-* **PUT /api/updateTask/:id:** Updates an existing task by its ID.
+* **PUT /api/tasks/updateTask/:id:** Updates an existing task by its ID.
   * **Parameters:** `id` (string) - Task ID.
   * **Request Body:** JSON object containing any of `title`, `description`, or `status`.
   * **Response:** The updated task object or 404 error if not found.
@@ -86,7 +87,7 @@ This application provides a secure task management system, allowing authenticate
     }
     ```
 
-* **DELETE /api/deleteTask/:id:** Deletes a task by its ID.
+* **DELETE /api/tasks/deleteTask/:id:** Deletes a task by its ID.
   * **Parameters:** `id` (string) - Task ID.
   * **Response:** 404 error if not found or 400 error if duplicate IDs are detected.
 
