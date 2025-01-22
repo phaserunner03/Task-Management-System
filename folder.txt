@@ -1,0 +1,16 @@
+task-management-api/
+├── server.js
+├── config/
+│   └── db.js
+├── controllers/
+│   ├── authController.js  # Handles authentication logic
+│   └── taskController.js  # Handles task-related logic
+├── middlewares/
+│   ├── authMiddleware.js  # Middleware to protect routes
+├── models/
+│   ├── taskModel.js       # Task schema
+│   └── userModel.js       # User schema
+├── routes/
+│   ├── authRoutes.js      # Routes for authentication
+│   └── taskRoutes.js      # Routes for task-related APIs
+└── package.json
