@@ -335,6 +335,3 @@ curl -X DELETE http://0.0.0.0:3000/api/tasks/deleteAll \
    The API will be running on `http://0.0.0.0:3000`.
 
 ---
-
-Let me know if you need further assistance!
-
