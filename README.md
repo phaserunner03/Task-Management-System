@@ -129,7 +129,7 @@ curl -X POST http://0.0.0.0:3000/api/auth/login \
 
 **Example cURL:**
 ```bash
-curl -X GET http://0.0.0.0:3000/api/tasks/getAllTasks?page=1&limit=10 \
+curl -X GET "http://0.0.0.0:3000/api/tasks/getAllTasks?page=1&limit=10" \
 -H "auth-token: YOUR_JWT_TOKEN"
 ```
 
